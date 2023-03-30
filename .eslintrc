@@ -1,0 +1,15 @@
+ {
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "node": true
+  },
+  "extends": [
+    "./.eslintrc-auto-import.json",
+    "code-style-lint-vue3-ts"
+  ],
+  "rules": {
+    "vue/multi-word-component-names": "off",
+    "@typescript-eslint/ban-ts-comment": "off"
+  }
+}
