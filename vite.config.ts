@@ -4,6 +4,7 @@ import vue from '@vitejs/plugin-vue'
 import { resolve } from 'path'
 import Pages from 'vite-plugin-pages'
 import AutoImport from 'unplugin-auto-import/vite'
+import VueI18nPlugin from '@intlify/unplugin-vue-i18n/vite'
 
 // https://vitejs.dev/config/
 export default ({ command, mode }: ConfigEnv) => {
@@ -15,6 +16,9 @@ export default ({ command, mode }: ConfigEnv) => {
       vue(),
       Pages({
         exclude: ['**/components/*'],
+      }),
+      VueI18nPlugin({
+        /* options */
       }),
       AutoImport({
         imports: ['vue', 'vue-router', 'pinia'],

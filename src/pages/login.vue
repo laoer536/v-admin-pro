@@ -1,7 +1,17 @@
 <template>
-  <div>登陆页</div>
+  <div>{{ t('hello') }}-{{ t('test') }}</div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { useLangScope } from '@hooks/i18n'
+const { t } = useLangScope()
+</script>
 
-<style scoped></style>
+<i18n lang="yaml">
+zh:
+  hello: '你好世界！'
+  test: '测试'
+en:
+  hello: 'Hello World!'
+  test: 'test'
+</i18n>
