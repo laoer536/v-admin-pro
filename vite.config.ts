@@ -46,6 +46,7 @@ export default ({ command, mode }: ConfigEnv) => {
         '@pages': resolve(__dirname, './src/pages'),
         '@assets': resolve(__dirname, './src/assets'),
         '@hooks': resolve(__dirname, './src/hooks'),
+        '@utils': resolve(__dirname, './src/utils'),
       },
     },
     //构建
