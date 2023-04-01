@@ -5,6 +5,7 @@ import { resolve } from 'path'
 import Pages from 'vite-plugin-pages'
 import AutoImport from 'unplugin-auto-import/vite'
 import VueI18nPlugin from '@intlify/unplugin-vue-i18n/vite'
+import vueJsx from '@vitejs/plugin-vue-jsx'
 
 // https://vitejs.dev/config/
 export default ({ command, mode }: ConfigEnv) => {
@@ -14,7 +15,9 @@ export default ({ command, mode }: ConfigEnv) => {
   return defineConfig({
     plugins: [
       vue(),
+      vueJsx({}),
       Pages({
+        extensions: ['vue', 'tsx'],
         exclude: ['**/components/*'],
       }),
       VueI18nPlugin({

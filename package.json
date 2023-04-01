@@ -23,6 +23,7 @@
     "@intlify/unplugin-vue-i18n": "^0.10.0",
     "@types/node": "^18.15.11",
     "@vitejs/plugin-vue": "^4.1.0",
+    "@vitejs/plugin-vue-jsx": "^3.0.1",
     "autoprefixer": "^10.4.14",
     "daisyui": "^2.51.5",
     "eslint": "^8.37.0",
