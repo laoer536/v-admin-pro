@@ -1,0 +1,9 @@
+{
+  "index": {
+    "jump": "jump"
+  },
+  "login": {
+    "hello": "Hello World!",
+    "test": "test"
+  }
+}

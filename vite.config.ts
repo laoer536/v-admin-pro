@@ -18,7 +18,7 @@ export default ({ command, mode }: ConfigEnv) => {
         exclude: ['**/components/*'],
       }),
       VueI18nPlugin({
-        /* options */
+        include: [resolve(__dirname, './src/assets/lang/**')],
       }),
       AutoImport({
         imports: ['vue', 'vue-router', 'pinia'],
