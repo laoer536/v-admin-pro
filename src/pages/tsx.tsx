@@ -1,7 +1,10 @@
 import { defineComponent } from 'vue'
+import { useI18n } from 'vue-i18n'
+
 export default defineComponent({
   name: 'app',
-  setup(props, ctx) {
-    return () => <div>Hello World</div>
+  setup() {
+    const { t } = useI18n()
+    return () => <div>{t('login.hello')}</div>
   },
 })
