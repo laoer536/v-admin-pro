@@ -4,20 +4,35 @@
   },
   "login": {
     "login": "login",
+    "register": "register",
     "signIn": "Sign in",
     "signUp": "Sign up",
     "Register": "Register",
     "logoText": "Your Logo",
-    "loginTipText": ["If you don’t have an account register", "You can", "Register here !"],
-    "registerTipText": ["If you already have an account register", "You can", "Login here !"],
+    "loginTipText": ["If you don’t have an account register ", "You can ", "register here !"],
+    "registerTipText": ["If you already have an account register ", "You can ", "login here !"],
     "form": [
       {
-        "name": "Account",
-        "placeholder": "Enter your account"
+        "name": "账号",
+        "placeholder": "请输入账号名称"
       },
       {
-        "name": "Password",
-        "placeholder": "Enter your password"
+        "name": "密码",
+        "placeholder": "请输入密码"
+      }
+    ],
+    "registerForm": [
+      {
+        "name": "账号",
+        "placeholder": "请输入一个注册账号名"
+      },
+      {
+        "name": "密码",
+        "placeholder": "请输入密码"
+      },
+      {
+        "name": "确认密码",
+        "placeholder": "再次输入密码确认"
       }
     ],
     "remember": "Remember me",

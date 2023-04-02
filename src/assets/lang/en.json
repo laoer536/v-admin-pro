@@ -4,12 +4,13 @@
   },
   "login": {
     "login": "login",
+    "register": "register",
     "signIn": "Sign in",
     "signUp": "Sign up",
     "Register": "Register",
     "logoText": "Your Logo",
-    "loginTipText": ["If you don’t have an account register", "You can ", "Register here !"],
-    "registerTipText": ["If you already have an account register", "You can ", "Login here !"],
+    "loginTipText": ["If you don’t have an account register", "You can ", "register here !"],
+    "registerTipText": ["If you already have an account register", "You can ", "login here !"],
     "form": [
       {
         "name": "Account",
@@ -18,6 +19,20 @@
       {
         "name": "Password",
         "placeholder": "Enter your password"
+      }
+    ],
+    "registerForm": [
+      {
+        "name": "Account",
+        "placeholder": "Enter your account"
+      },
+      {
+        "name": "Password",
+        "placeholder": "Enter your password"
+      },
+      {
+        "name": "Confirm the password",
+        "placeholder": "Enter the password confirmation again"
       }
     ],
     "remember": "Remember me",
