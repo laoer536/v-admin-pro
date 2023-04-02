@@ -8,7 +8,7 @@
     <div class="text-base mt-1.5">{{ t('login.registerTipText[0]') }}</div>
     <div class="text-base">
       <span>{{ t('login.registerTipText[1]') }}</span>
-      <span class="text-error">{{ $t('login.registerTipText[2]') }}</span>
+      <span class="text-error">{{ t('login.registerTipText[2]') }}</span>
     </div>
     <!--    <div>{{ t('login.registerForm') }}</div>-->
     <div class="form-control w-full mt-6">
