@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --host",
     "build": "vue-tsc && vite build",
     "build:test": "vue-tsc && vite build --mode test",
     "preview": "vite preview",
@@ -12,6 +12,7 @@
     "format": "prettier --write \"./**/*.{html,vue,ts,js,tsx,json,md}\""
   },
   "dependencies": {
+    "@heroicons/vue": "^2.0.17",
     "nprogress": "^0.2.0",
     "pinia": "^2.0.33",
     "pinia-plugin-persistedstate": "^3.1.0",

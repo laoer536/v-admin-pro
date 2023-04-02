@@ -1,6 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@heroicons/vue': ^2.0.17
   '@intlify/unplugin-vue-i18n': ^0.10.0
   '@types/node': ^18.15.11
   '@vitejs/plugin-vue': ^4.1.0
@@ -26,6 +27,7 @@ specifiers:
   vue-tsc: ^1.2.0
 
 dependencies:
+  '@heroicons/vue': 2.0.17_vue@3.2.47
   nprogress: 0.2.0
   pinia: 2.0.33_hmuptsblhheur2tugfgucj7gc4
   pinia-plugin-persistedstate: 3.1.0_pinia@2.0.33
@@ -609,6 +611,14 @@ packages:
     resolution: {integrity: sha512-x5vzdtOOGgFVDCUs81QRB2+liax8rFg3+7hqM+QhBG0/G3F1ZsoYl97UrqgHgQ9KKT7G6c4V+aTUCgu/n22v1A==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dev: true
+
+  /@heroicons/vue/2.0.17_vue@3.2.47:
+    resolution: {integrity: sha512-M5P6Y9tmctbtv/IC1dO5vTw9xqppYxm/5BKuL4hGlxxLvaxbnTmMAoxTIzezSdYAaLh63emgOCBMa+mxphRxUQ==}
+    peerDependencies:
+      vue: '>= 3'
+    dependencies:
+      vue: 3.2.47
+    dev: false
 
   /@humanwhocodes/config-array/0.11.8:
     resolution: {integrity: sha512-UybHIJzJnR5Qc/MsD9Kr+RpO2h+/P1GhOwdiLPXK5TWk5sgTdu88bTD9UP+CKbPPh5Rni1u0GjAdYQLemG8g+g==}

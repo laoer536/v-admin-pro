@@ -3,7 +3,25 @@
     "jump": "jump"
   },
   "login": {
-    "hello": "Hello World!",
-    "test": "test"
+    "login": "login",
+    "signIn": "Sign in",
+    "signUp": "Sign up",
+    "Register": "Register",
+    "logoText": "Your Logo",
+    "loginTipText": ["If you don’t have an account register", "You can ", "Register here !"],
+    "registerTipText": ["If you already have an account register", "You can ", "Login here !"],
+    "form": [
+      {
+        "name": "Account",
+        "placeholder": "Enter your account"
+      },
+      {
+        "name": "Password",
+        "placeholder": "Enter your password"
+      }
+    ],
+    "remember": "Remember me",
+    "forgot": "Forgot Password ?",
+    "otherWay": "or continue with"
   }
 }

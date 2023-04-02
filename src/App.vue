@@ -1,10 +1,7 @@
-<script setup lang="ts">
-import LangSelect from '@components/LangSelect.vue'
-</script>
+<script setup lang="ts"></script>
 
 <template>
-  <div class="page text-center p-4">
-    <LangSelect />
+  <div class="h-full">
     <router-view />
   </div>
 </template>
