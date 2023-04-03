@@ -1,11 +1,12 @@
 <template>
   <div class="flex h-full md:flex-none">
-    <div class="hidden md:flex-1 md:block">
-      <img :src="img" class="w-full h-full object-cover" alt="" />
+    <div class="relative hidden md:flex-1 md:block">
+      <div class="absolute left-8 top-5 text-lg hidden md:block">{{ t('login.logoText') }}</div>
+      <img :src="img" class="w-full h-full object-contain" alt="" />
     </div>
     <div class="py-6 px-6 min-w-full md:px-12 md:min-w-[512px]">
       <div class="flex justify-between items-center">
-        <div class="text-lg">{{ t('login.logoText') }}</div>
+        <div class="text-lg md:hidden">{{ t('login.logoText') }}</div>
         <LangSelect />
       </div>
       <div class="mt-12 font-medium text-3xl">{{ t('login.signUp') }}</div>
@@ -46,7 +47,7 @@
 
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n'
-import img from '@assets/images/laoer536-blog-home.jpeg'
+import img from '@assets/images/laoer536-blog-home.svg'
 import LangSelect from '@components/LangSelect.vue'
 const { t } = useI18n()
 </script>
