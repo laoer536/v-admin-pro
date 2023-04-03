@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .e-after-round {
+    @apply after:absolute after:-right-1 after:-top-1 after:text-xs after:rounded-full after:bg-info after:w-6 after:h-6 after:flex after:items-center after:justify-center after:text-primary-content after:drop-shadow-md;
+  }
+}
+
 /* nprogress */
 #nprogress {
   pointer-events: none;

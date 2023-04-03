@@ -1,7 +1,7 @@
 <template>
   <div class="flex h-full md:flex-none">
     <div class="relative hidden md:flex-1 md:block">
-      <div class="absolute left-8 top-5 text-lg hidden md:block">{{ t('login.logoText') }}</div>
+      <div class="absolute left-8 top-4 text-lg hidden md:block">{{ t('login.logoText') }}</div>
       <img :src="img" class="w-full h-full object-contain" alt="" />
     </div>
     <div class="py-6 px-6 min-w-full md:px-12 md:min-w-[512px]">
@@ -39,7 +39,9 @@
         />
       </div>
       <div class="text-center mt-10">
-        <button class="btn btn-wide btn-error rounded-full text-white">{{ t('login.register') }}</button>
+        <button class="btn btn-wide btn-error rounded-full text-white" @click="router.push('/login')">
+          {{ t('login.register') }}
+        </button>
       </div>
     </div>
   </div>
@@ -50,4 +52,5 @@ import { useI18n } from 'vue-i18n'
 import img from '@assets/images/laoer536-blog-home.svg'
 import LangSelect from '@components/LangSelect.vue'
 const { t } = useI18n()
+const router = useRouter()
 </script>
