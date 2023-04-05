@@ -1,5 +1,5 @@
 <template>
-  <div>form</div>
+  <div class="h-[200vh] bg-info">form</div>
 </template>
 
 <script setup lang="ts"></script>

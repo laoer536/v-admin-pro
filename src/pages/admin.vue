@@ -1,11 +1,9 @@
 <template>
-  <div class="h-full flex flex-grow">
-    <div><PageAside /></div>
-    <div class="flex-1 overflow-y-auto">
-      <PageHeader />
-      <div class="pl-12 pt-12 pr-12 pb-16 bg-info h-full">
-        <router-view />
-      </div>
+  <div class="h-full">
+    <div class="fixed left-0 top-0 h-full z-10"><PageAside /></div>
+    <div class="fixed left-0 top-0 w-full"><PageHeader /></div>
+    <div class="pl-[368px] pt-[120px] pr-12 pb-16">
+      <router-view />
     </div>
   </div>
 </template>
