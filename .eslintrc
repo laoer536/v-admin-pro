@@ -10,6 +10,7 @@
   ],
   "rules": {
     "vue/multi-word-component-names": "off",
-    "@typescript-eslint/ban-ts-comment": "off"
+    "@typescript-eslint/ban-ts-comment": "off",
+    "no-unused-vars": "error"
   }
 }
