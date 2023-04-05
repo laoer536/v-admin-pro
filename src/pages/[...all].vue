@@ -3,8 +3,13 @@
 </template>
 
 <script setup lang="ts">
+const route = useRoute()
 const router = useRouter()
-router.replace('/admin/404')
+if (route.path === '/') {
+  router.replace('/admin/dashboard')
+} else {
+  router.replace('/admin/404')
+}
 </script>
 
 <style scoped></style>
