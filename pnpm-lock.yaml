@@ -10,6 +10,7 @@ specifiers:
   daisyui: ^2.51.5
   eslint: ^8.37.0
   eslint-config-code-style-lint-vue3-ts: ^3.0.5
+  husky: ^8.0.3
   nprogress: ^0.2.0
   pinia: ^2.0.33
   pinia-plugin-persistedstate: ^3.1.0
@@ -44,6 +45,7 @@ devDependencies:
   daisyui: 2.51.5_j7yt3jd32cwenjqavrrga47yr4
   eslint: 8.37.0
   eslint-config-code-style-lint-vue3-ts: 3.0.5_mynbu4awuj5kq5eovjtx6diuey
+  husky: 8.0.3
   postcss: 8.4.21
   prettier: 2.8.7
   prettier-plugin-tailwindcss: 0.2.6_prettier@2.8.7
@@ -2028,6 +2030,12 @@ packages:
   /html-tags/3.2.0:
     resolution: {integrity: sha512-vy7ClnArOZwCnqZgvv+ddgHgJiAFXe3Ge9ML5/mBctVJoUoYPCdxVucOywjDARn6CVoh3dRSFdPHy2sX80L0Wg==}
     engines: {node: '>=8'}
+    dev: true
+
+  /husky/8.0.3:
+    resolution: {integrity: sha512-+dQSyqPh4x1hlO1swXBiNb2HzTDN1I2IGLQx1GrBuiqFJfoMrnZWwVmatvSiO+Iz8fBUnf+lekwNo4c2LlXItg==}
+    engines: {node: '>=14'}
+    hasBin: true
     dev: true
 
   /ignore/5.2.4:
