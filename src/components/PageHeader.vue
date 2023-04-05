@@ -1,5 +1,5 @@
 <template>
-  <div class="py-8 px-14 flex justify-end items-center">
+  <header class="py-8 px-14 flex justify-end items-center sticky left-0 top-0 bg-base-200">
     <div class="relative avatar mr-16 e-after-round after:content-['12']">
       <div class="w-14 p-4 rounded-full bg-primary-content">
         <BellIcon />
@@ -22,7 +22,7 @@
         <Cog6ToothIcon class="w-6 h-6 text-primary-content" />
       </div>
     </div>
-  </div>
+  </header>
 </template>
 
 <script setup lang="ts">
