@@ -10,18 +10,20 @@
     <div class="flex flex-col space-y-2 mt-20">
       <div class="menu" v-for="item in menus" :key="item.name">
         <div v-if="item?.children?.length > 0" class="flex flex-col space-y-2">
-          <div class="flex items-center gap-7">
-            <div class="ml-20 flex-center w-20 h-20 bg-info rounded-full drop-shadow-lg">
+          <router-link :to="item.path" class="flex items-center gap-7 father">
+            <div class="ml-20 flex-center w-20 h-20 rounded-full drop-shadow-lg transition-colors">
               <img class="w-7 h-7" src="/me.png" alt="" />
             </div>
-            <span>{{ item.name }}</span>
-          </div>
-          <router-link v-for="child in item.children" :key="child.name" :to="child?.path">
-            <span class="ml-44 textarea-lg">{{ child.name }}</span>
+            <span class="text-base-content/30">{{ item.name }}</span>
           </router-link>
+          <div class="flex flex-col gap-4 h-0 overflow-hidden child">
+            <router-link v-for="child in item.children" :key="child.name" :to="child?.path">
+              <span class="ml-44 textarea-lg text-base-content/30">{{ child.name }}</span>
+            </router-link>
+          </div>
         </div>
         <router-link v-else :to="item?.path" class="flex items-center gap-7">
-          <div class="ml-20 flex-center w-20 h-20 rounded-full drop-shadow-lg">
+          <div class="ml-20 flex-center w-20 h-20 rounded-full drop-shadow-lg transition-colors">
             <img class="w-7 h-7" src="/me.png" alt="" />
           </div>
           <span class="text-lg text-base-content/30">{{ item.name }}</span>
@@ -44,6 +46,7 @@ const menus: Menus = [
   {
     name: 'Components',
     icon: '',
+    path: '/admin/component',
     children: [
       { name: 'Table', path: '/admin/component/table' },
       { name: 'Form', path: '/admin/component/form' },
@@ -54,10 +57,16 @@ const menus: Menus = [
 </script>
 
 <style scoped>
-.router-link-exact-active span {
+.router-link-active span {
   @apply font-bold text-base-content;
 }
-.router-link-exact-active > div {
-  @apply bg-info;
+.router-link-active > div {
+  @apply bg-info scale-100;
+}
+.child {
+  transition: height 0.2s cubic-bezier(0.34, 0.69, 0.1, 1);
+}
+.router-link-active.father ~ .child {
+  @apply h-[88px];
 }
 </style>
