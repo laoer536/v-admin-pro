@@ -64,7 +64,7 @@ const menus: Menus = [
   @apply bg-info scale-100;
 }
 .child {
-  transition: height 0.2s cubic-bezier(0.34, 0.69, 0.1, 1);
+  transition: height 0.3s cubic-bezier(0.08, 0.82, 0.17, 1);
 }
 .router-link-active.father ~ .child {
   @apply h-[88px];
