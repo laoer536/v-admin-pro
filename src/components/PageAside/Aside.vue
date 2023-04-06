@@ -1,30 +1,30 @@
 <template>
-  <aside class="pt-7 h-full md:fixed md:left-0 md:top-0 md:z-10 md:w-80">
+  <aside class="h-full pt-7 md:fixed md:left-0 md:top-0 md:z-10 md:w-80">
     <div class="flex items-center justify-center">
-      <img class="w-12 h-12 md:mr-6" src="/logo.svg" alt="" />
+      <img class="h-12 w-12 md:mr-6" src="/logo.svg" alt="" />
       <div class="hidden md:flex md:flex-col">
         <span class="text-2xl font-bold">Logo Name</span>
-        <span class="text-gray-400 text-md">Admin Name</span>
+        <span class="text-md text-gray-400">Admin Name</span>
       </div>
     </div>
-    <div class="flex flex-col space-y-2 mt-4 md:mt-20">
+    <div class="mt-4 flex flex-col space-y-2 md:mt-20">
       <div class="menu" v-for="item in menus" :key="item.name">
         <div v-if="item?.children?.length > 0" class="flex flex-col space-y-2">
-          <router-link :to="item.path" class="flex items-center justify-center gap-7 father md:justify-start">
-            <div class="hidden ml-20 flex-center w-20 h-20 rounded-full drop-shadow-lg transition-colors md:flex">
-              <img class="w-7 h-7" src="/me.png" alt="" />
+          <router-link :to="item.path" class="father flex items-center justify-center gap-7 md:justify-start">
+            <div class="flex-center ml-20 hidden h-20 w-20 rounded-full drop-shadow-lg transition-colors md:flex">
+              <img class="h-7 w-7" src="/me.png" alt="" />
             </div>
             <span class="text-base-content/30">{{ item.name }}</span>
           </router-link>
-          <div class="flex flex-col items-center h-0 overflow-hidden child md:items-stretch md:gap-4">
+          <div class="child flex h-0 flex-col items-center overflow-hidden md:items-stretch md:gap-4">
             <router-link v-for="child in item.children" :key="child.name" :to="child?.path">
               <span class="textarea-lg text-base-content/30 md:ml-44">{{ child.name }}</span>
             </router-link>
           </div>
         </div>
         <router-link v-else :to="item?.path" class="flex items-center justify-center gap-7 md:justify-start">
-          <div class="hidden ml-20 flex-center w-20 h-20 rounded-full drop-shadow-lg transition-colors md:flex">
-            <img class="w-7 h-7" src="/me.png" alt="" />
+          <div class="flex-center ml-20 hidden h-20 w-20 rounded-full drop-shadow-lg transition-colors md:flex">
+            <img class="h-7 w-7" src="/me.png" alt="" />
           </div>
           <span class="text-lg text-base-content/30">{{ item.name }}</span>
         </router-link>
@@ -61,7 +61,7 @@ const menus: Menus = [
   @apply font-bold text-base-content;
 }
 .router-link-active > div {
-  @apply bg-info scale-100;
+  @apply scale-100 bg-info;
 }
 .child {
   transition: height 0.3s cubic-bezier(0.08, 0.82, 0.17, 1);

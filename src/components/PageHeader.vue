@@ -1,7 +1,7 @@
 <template>
-  <header class="py-8 px-14 flex justify-end items-center bg-base-200 min-w-fit fixed left-0 top-0 w-full">
-    <div class="relative avatar mr-16 e-after-round after:content-['12']">
-      <div class="w-14 p-4 rounded-full bg-primary-content">
+  <header class="fixed left-0 top-0 flex w-full min-w-fit items-center justify-end bg-base-200 px-14 py-8">
+    <div class="e-after-round avatar relative mr-16 after:content-['12']">
+      <div class="w-14 rounded-full bg-primary-content p-4">
         <BellIcon />
       </div>
     </div>
@@ -10,16 +10,16 @@
         Hello,
         <span class="font-bold">laoer536</span>
       </div>
-      <div class="text-xs text-gray-400 mt-1">Super Admin</div>
+      <div class="mt-1 text-xs text-gray-400">Super Admin</div>
     </div>
-    <div class="avatar online mr-4">
+    <div class="online avatar mr-4">
       <div class="w-14 rounded-full">
         <img src="/me.png" alt="" />
       </div>
     </div>
     <div class="avatar">
-      <div class="p-4 w-14 rounded-full bg-accent">
-        <Cog6ToothIcon class="w-6 h-6 text-primary-content" />
+      <div class="w-14 rounded-full bg-accent p-4">
+        <Cog6ToothIcon class="h-6 w-6 text-primary-content" />
       </div>
     </div>
   </header>

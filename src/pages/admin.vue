@@ -2,7 +2,7 @@
   <div class="h-full">
     <PageAside />
     <PageHeader class="hidden md:flex" />
-    <div class="py-16 px-4 md:pl-[368px] md:pt-[120px] md:pr-12 md:pb-16">
+    <div class="px-4 py-16 md:pb-16 md:pl-[368px] md:pr-12 md:pt-[120px]">
       <router-view />
     </div>
   </div>
