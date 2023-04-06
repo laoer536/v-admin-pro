@@ -1,5 +1,5 @@
 <template>
-  <header class="py-8 px-14 flex justify-end items-center bg-base-200 min-w-fit">
+  <header class="py-8 px-14 flex justify-end items-center bg-base-200 min-w-fit fixed left-0 top-0 w-full">
     <div class="relative avatar mr-16 e-after-round after:content-['12']">
       <div class="w-14 p-4 rounded-full bg-primary-content">
         <BellIcon />

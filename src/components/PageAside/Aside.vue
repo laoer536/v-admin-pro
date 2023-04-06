@@ -1,29 +1,29 @@
 <template>
-  <aside class="w-80 pt-7">
+  <aside class="pt-7 h-full md:fixed md:left-0 md:top-0 md:z-10 md:w-80">
     <div class="flex items-center justify-center">
-      <img class="w-12 h-12 mr-6" src="/logo.svg" alt="" />
-      <div class="flex flex-col">
+      <img class="w-12 h-12 md:mr-6" src="/logo.svg" alt="" />
+      <div class="hidden md:flex md:flex-col">
         <span class="text-2xl font-bold">Logo Name</span>
         <span class="text-gray-400 text-md">Admin Name</span>
       </div>
     </div>
-    <div class="flex flex-col space-y-2 mt-20">
+    <div class="flex flex-col space-y-2 mt-4 md:mt-20">
       <div class="menu" v-for="item in menus" :key="item.name">
         <div v-if="item?.children?.length > 0" class="flex flex-col space-y-2">
-          <router-link :to="item.path" class="flex items-center gap-7 father">
-            <div class="ml-20 flex-center w-20 h-20 rounded-full drop-shadow-lg transition-colors">
+          <router-link :to="item.path" class="flex items-center justify-center gap-7 father md:justify-start">
+            <div class="hidden ml-20 flex-center w-20 h-20 rounded-full drop-shadow-lg transition-colors md:flex">
               <img class="w-7 h-7" src="/me.png" alt="" />
             </div>
             <span class="text-base-content/30">{{ item.name }}</span>
           </router-link>
-          <div class="flex flex-col gap-4 h-0 overflow-hidden child">
+          <div class="flex flex-col items-center h-0 overflow-hidden child md:items-stretch md:gap-4">
             <router-link v-for="child in item.children" :key="child.name" :to="child?.path">
-              <span class="ml-44 textarea-lg text-base-content/30">{{ child.name }}</span>
+              <span class="textarea-lg text-base-content/30 md:ml-44">{{ child.name }}</span>
             </router-link>
           </div>
         </div>
-        <router-link v-else :to="item?.path" class="flex items-center gap-7">
-          <div class="ml-20 flex-center w-20 h-20 rounded-full drop-shadow-lg transition-colors">
+        <router-link v-else :to="item?.path" class="flex items-center justify-center gap-7 md:justify-start">
+          <div class="hidden ml-20 flex-center w-20 h-20 rounded-full drop-shadow-lg transition-colors md:flex">
             <img class="w-7 h-7" src="/me.png" alt="" />
           </div>
           <span class="text-lg text-base-content/30">{{ item.name }}</span>
@@ -67,6 +67,12 @@ const menus: Menus = [
   transition: height 0.3s cubic-bezier(0.08, 0.82, 0.17, 1);
 }
 .router-link-active.father ~ .child {
-  @apply h-[88px];
+  @apply h-[72px];
+}
+
+@screen md {
+  .router-link-active.father ~ .child {
+    @apply h-[88px];
+  }
 }
 </style>

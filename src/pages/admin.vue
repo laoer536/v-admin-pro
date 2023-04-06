@@ -1,8 +1,8 @@
 <template>
   <div class="h-full">
-    <div class="fixed left-0 top-0 h-full z-10"><PageAside /></div>
-    <div class="fixed left-0 top-0 w-full"><PageHeader /></div>
-    <div class="pl-[368px] pt-[120px] pr-12 pb-16">
+    <PageAside />
+    <PageHeader class="hidden md:flex" />
+    <div class="py-16 px-4 md:pl-[368px] md:pt-[120px] md:pr-12 md:pb-16">
       <router-view />
     </div>
   </div>
@@ -10,5 +10,5 @@
 
 <script setup lang="ts">
 import PageHeader from '@components/PageHeader.vue'
-import PageAside from '@components/PageAside.vue'
+import PageAside from '@components/PageAside/index.vue'
 </script>
