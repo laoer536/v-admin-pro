@@ -28,7 +28,7 @@
       </label>
       <div
         class="fixed w-fit pb-7 px-7 top-10 z-50 left-6 shadow scale-100 opacity-100 bg-base-100 rounded-box transition-all"
-        :class="{ 'opacity-0 scale-75': !isFocus }"
+        :class="{ 'opacity-0 scale-75 pointer-events-none': !isFocus }"
       >
         <Aside />
       </div>
