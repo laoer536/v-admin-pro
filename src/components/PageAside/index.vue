@@ -27,8 +27,8 @@
         </svg>
       </label>
       <div
-        class="rounded-box fixed left-6 top-10 z-50 w-fit scale-100 bg-base-100 px-7 pb-7 opacity-100 shadow transition-all"
-        :class="{ 'pointer-events-none scale-75 opacity-0': !isFocus }"
+        class="rounded-box fixed left-6 top-10 z-50 w-fit scale-100 bg-base-100 px-7 pb-7 shadow transition-all"
+        :class="{ 'invisible scale-0 opacity-0': !isFocus }"
       >
         <Aside />
       </div>
