@@ -3,9 +3,9 @@
 // @ts-ignore
 import NProgress from 'nprogress'
 import routes from '~pages'
-import { createRouter, createWebHashHistory } from 'vue-router'
+import { createRouter, createWebHistory } from 'vue-router'
 const router = createRouter({
-  history: createWebHashHistory(import.meta.env.VITE_PUBLIC_PATH as string),
+  history: createWebHistory(import.meta.env.VITE_PUBLIC_PATH as string),
   routes,
 })
 //nprogress
