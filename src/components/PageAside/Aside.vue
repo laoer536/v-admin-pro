@@ -1,5 +1,5 @@
 <template>
-  <aside class="h-full pt-7 md:fixed md:left-0 md:top-0 md:z-10 md:w-80">
+  <aside class="h-full pt-7 md:fixed md:left-0 md:top-0 md:z-50 md:w-80">
     <div class="flex items-center justify-center">
       <img class="h-12 w-12 md:mr-6" src="/logo.svg" alt="" />
       <div class="hidden md:flex md:flex-col">
