@@ -4,7 +4,7 @@
       <div class="form-control w-52">
         <label class="label cursor-pointer">
           <span class="label-text">Remember me</span>
-          <input type="checkbox" checked="checked" class="checkbox-secondary checkbox" />
+          <input type="checkbox" checked class="checkbox-secondary checkbox" />
         </label>
       </div>
       <div>

@@ -51,6 +51,7 @@ export default ({ command, mode }: ConfigEnv) => {
     },
     //构建
     build: {
+      outDir: 'docs',
       sourcemap: mode != 'production',
     },
   })

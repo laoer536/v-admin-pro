@@ -9,7 +9,7 @@
     </div>
     <div class="mt-4 flex flex-col space-y-2 md:mt-20">
       <div class="menu" v-for="item in menus" :key="item.name">
-        <div v-if="item?.children?.length > 0" class="flex flex-col space-y-2">
+        <div v-if="Boolean(item?.children?.length)" class="flex flex-col space-y-2">
           <router-link :to="item.path" class="father flex items-center justify-center gap-7 md:justify-start">
             <div class="flex-center ml-20 hidden h-20 w-20 rounded-full drop-shadow-lg transition-colors md:flex">
               <img class="h-7 w-7" src="/me.png" alt="" />
@@ -37,7 +37,7 @@
 interface MenuItem {
   name: string
   icon?: string
-  path?: string
+  path: string
   children?: MenuItem[]
 }
 type Menus = MenuItem[]

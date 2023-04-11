@@ -29,7 +29,7 @@
       <div class="mt-1 flex items-center justify-between">
         <div class="form-control">
           <label class="label cursor-pointer">
-            <input type="checkbox" checked="checked" class="checkbox checkbox-sm mr-2" />
+            <input type="checkbox" checked class="checkbox checkbox-sm mr-2" />
             <span class="label-text text-xs">{{ t('login.remember') }}</span>
           </label>
         </div>
