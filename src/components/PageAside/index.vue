@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="md:hidden">
-      <label class="swap swap-rotate btn-circle btn fixed left-0 top-0 z-50">
+      <label class="swap-rotate swap btn-circle btn fixed left-0 top-0 z-50">
         <input type="checkbox" v-model="isFocus" />
         <svg
           class="swap-off fill-current"
