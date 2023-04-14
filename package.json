@@ -8,7 +8,7 @@
     "build": "vue-tsc && vite build",
     "build:test": "vue-tsc && vite build --mode test",
     "preview": "vite preview",
-    "lint": "eslint . --ext .vue,.js,.ts,.jsx,.tsx",
+    "lint": "eslint . --ext .vue,.js,.ts,.jsx,.tsx --fix",
     "format": "prettier --write \"./**/*.{html,vue,ts,js,tsx,json,md}\"",
     "prepare": "husky install"
   },

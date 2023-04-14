@@ -13,7 +13,7 @@
       <div class="mt-1.5 text-base">{{ t('login.loginTipText[0]') }}</div>
       <div class="text-base">
         <span>{{ t('login.loginTipText[1]') }}</span>
-        <a href="/register" target="_self" class="text-error">{{ $t('login.loginTipText[2]') }}</a>
+        <span @click="router.push('/register')" class="text-error">{{ $t('login.loginTipText[2]') }}</span>
       </div>
       <!--    <div>{{ t('login.form') }}</div>-->
       <div class="form-control mt-6 w-full">
